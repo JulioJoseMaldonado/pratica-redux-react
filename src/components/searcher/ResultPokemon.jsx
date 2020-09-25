@@ -17,7 +17,7 @@ const ResultPokemon = () => {
                     <span>{searcher.pokemon[0].name}</span>
                 </div>
             }
-            {searcher.error !== '' && <span className="text-danger">Error</span>}
+            {searcher.error !== '' && <span className="text-danger">{searcher.error}</span>}
         </div>
     
     )
