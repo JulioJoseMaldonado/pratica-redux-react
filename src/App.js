@@ -4,8 +4,11 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
 import StockPokemonHook from './components/StockPokemon.hook';
 import BuyPokemonHook from './components/BuyPokemon.hook';
+import SearcherPokemon from './components/searcher/SearcherPokemon';
+import ResultPokemon from './components/searcher/ResultPokemon';
 import store from './redux/store';
 import { Provider } from 'react-redux';
+
 
 function App() {
 
@@ -29,7 +32,13 @@ function App() {
                   </div>
                 </div>
               </div>
-            </div>  
+            </div>
+              <div className="col-12 mt-4 border-top pt-3">
+                <SearcherPokemon />
+              </div>
+              <div className="col-12">
+                <ResultPokemon />
+              </div>  
           </div>
       </div>
     </Provider>
